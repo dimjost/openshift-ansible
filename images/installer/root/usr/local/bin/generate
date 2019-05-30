@@ -53,7 +53,7 @@ class OpenShiftClient:
 
     def __init__(self, kubeconfig=DEFAULT_ADMIN_KUBECONFIG_PATH):
         """Find and store path to oc binary"""
-        # https://github.com/openshift/openshift-ansible/issues/3410
+        # https://github.com/dimjost/openshift-ansible/issues/3410
         # oc can be in /usr/local/bin in some cases, but that may not
         # be in $PATH due to ansible/sudo
         paths = os.environ.get("PATH", os.defpath).split(os.pathsep) + ['/usr/local/bin', os.path.expanduser('~/bin')]

@@ -7,7 +7,7 @@ USER root
 LABEL name="openshift/origin-ansible" \
       summary="OpenShift's installation and configuration tool" \
       description="A containerized openshift-ansible image to use in CI - includes necessary packages to test clusters on AWS/GCP/Azure" \
-      url="https://github.com/openshift/openshift-ansible" \
+      url="https://github.com/dimjost/openshift-ansible" \
       io.k8s.display-name="openshift-ansible" \
       io.k8s.description="A containerized openshift-ansible image to use in CI - includes necessary packages to test clusters on AWS/GCP/Azure" \
       io.openshift.expose-services="" \

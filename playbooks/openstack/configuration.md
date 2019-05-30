@@ -107,7 +107,7 @@ In `inventory/group_vars/OSEv3.yml`:
 
 Additional options can be found in this sample inventory:
 
-https://github.com/openshift/openshift-ansible/blob/master/inventory/hosts.example
+https://github.com/dimjost/openshift-ansible/blob/master/inventory/hosts.example
 
 
 ## OpenStack Cloud Provider Configuration
@@ -124,7 +124,7 @@ Some features require you to configure the OpenStack cloud provider. For example
 
 The full range of openshift-ansible OpenStack cloud provider options can be found at:
 
-https://github.com/openshift/openshift-ansible/blob/master/roles/openshift_cloud_provider/templates/openstack.conf.j2
+https://github.com/dimjost/openshift-ansible/blob/master/roles/openshift_cloud_provider/templates/openstack.conf.j2
 
 For more information, consult the [Configuring for OpenStack page in the OpenShift documentation][openstack-credentials].
 

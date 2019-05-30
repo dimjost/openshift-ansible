@@ -6,7 +6,7 @@ based on `centos:7` or `rhel7.3:7.3-released`.
 
 Read additional setup information for this image at: https://hub.docker.com/r/openshift/origin-ansible/
 
-Read additional information about the `openshift/origin-ansible` at: https://github.com/openshift/openshift-ansible/blob/master/README_CONTAINER_IMAGE.md
+Read additional information about the `openshift/origin-ansible` at: https://github.com/dimjost/openshift-ansible/blob/master/README_CONTAINER_IMAGE.md
 
 Also contains necessary components for running the installer using an Atomic System Container.
 

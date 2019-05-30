@@ -248,7 +248,7 @@ dependencies:
 - role: openshift_facts
 ```
 
-[openshift_logging/tasks/install_support.yaml - old](https://github.com/openshift/openshift-ansible/blob/master/roles/openshift_logging/tasks/install_support.yaml)
+[openshift_logging/tasks/install_support.yaml - old](https://github.com/dimjost/openshift-ansible/blob/master/roles/openshift_logging/tasks/install_support.yaml)
 ```yaml
 ---
 # This is the base configuration for installing the other components

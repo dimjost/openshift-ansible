@@ -38,7 +38,7 @@ against your inventory file. Here is the step-by-step:
 1. If you haven't done it yet, clone this repository:
 
     ```console
-    $ git clone https://github.com/openshift/openshift-ansible
+    $ git clone https://github.com/dimjost/openshift-ansible
     $ cd openshift-ansible
     ```
 

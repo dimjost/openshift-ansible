@@ -13,8 +13,8 @@ Version:        3.11.115
 Release:        1%{?dist}
 Summary:        Openshift and Atomic Enterprise Ansible
 License:        ASL 2.0
-URL:            https://github.com/openshift/openshift-ansible
-Source0:        https://github.com/openshift/openshift-ansible/archive/%{commit}/%{name}-%{version}.tar.gz
+URL:            https://github.com/dimjost/openshift-ansible
+Source0:        https://github.com/dimjost/openshift-ansible/archive/%{commit}/%{name}-%{version}.tar.gz
 BuildArch:      noarch
 # We expect most to run >= 2.6 but there are some module dependency conflicts
 # in openstack modules for 2.6 that are nearly impossible to resolve so tolerate 2.5.7
@@ -2901,7 +2901,7 @@ BuildArch:     noarch
 - Allowing means to provide custom es config entries with
   openshift_logging_es_config (ewolinet@redhat.com)
 - GlusterFS - Invoke oc binary with the admin.kubeconfig token rather than
-  default token from $HOME/.kube/config (“dani_comnea@yahoo.com”)
+  default token from $HOME/.kube/config (â€œdani_comnea@yahoo.comâ€�)
 - Break up components installs into separate playbooks (staebler@redhat.com)
 
 * Wed Mar 14 2018 Justin Pierce <jupierce@redhat.com> 3.10.0-0.7.0
@@ -6454,7 +6454,7 @@ BuildArch:     noarch
 - Add bool for proper conditional handling (rteague@redhat.com)
 
 * Thu Apr 27 2017 Jenkins CD Merge Bot <tdawson@redhat.com> 3.6.40-1
-- Fix cluster creation with `bin/cluster` when there’s no glusterfs node
+- Fix cluster creation with `bin/cluster` when thereâ€™s no glusterfs node
   (lhuard@amadeus.com)
 
 * Thu Apr 27 2017 Jenkins CD Merge Bot <tdawson@redhat.com> 3.6.39-1
@@ -7070,7 +7070,7 @@ BuildArch:     noarch
 - Renaming registry and router roles to oc_adm_ (kwoodson@redhat.com)
 - Fixing registry doc and suggestions. (kwoodson@redhat.com)
 - Adding router and registry to lib_openshift. (kwoodson@redhat.com)
-- bug 142026. Ensure Ops PVC prefix are initialized to empty when ops e…
+- bug 142026. Ensure Ops PVC prefix are initialized to empty when ops eâ€¦
   nabled (jcantril@redhat.com)
 - Reverting logic for verify api handler to be uniform with other ways we
   verify, will be uniformly updated in future (ewolinet@redhat.com)
@@ -7498,7 +7498,7 @@ BuildArch:     noarch
 - Add tasks to uninstall metrics (#7) (jcantrill@users.noreply.github.com)
 - Custom certificates (#5) (bbarcaro@redhat.com)
 - prefix vars with metrics role (#4) (jcantrill@users.noreply.github.com)
-- Bruno Barcarol Guimarães work to move metrics to ansible from deployer
+- Bruno Barcarol GuimarÃ£es work to move metrics to ansible from deployer
   (jcantril@redhat.com)
 - Adding oc_edit module to lib_openshift. (kwoodson@redhat.com)
 - Create individual serving cert and loopback kubeconfig for additional
@@ -8246,7 +8246,7 @@ BuildArch:     noarch
 - Fix standalone Docker upgrade missing symlink. (dgoodwin@redhat.com)
 - Open OpenStack security group for the service node port range
   (lhuard@amadeus.com)
-- Fix the “node on master” feature (lhuard@amadeus.com)
+- Fix the â€œnode on masterâ€� feature (lhuard@amadeus.com)
 - Due to problems with with_fileglob lets avoid using it for now
   (sdodson@redhat.com)
 
@@ -8427,7 +8427,7 @@ BuildArch:     noarch
 - Install bash-completion package for the oc/oadm tools (tbielawa@redhat.com)
 - Fix more docker role logic. (dgoodwin@redhat.com)
 - Add checks to docker role for 1.9.1+. (dgoodwin@redhat.com)
-- Make libvirt’s VM use virtio-scsi insteal of virtio-blk
+- Make libvirtâ€™s VM use virtio-scsi insteal of virtio-blk
   (lhuard@amadeus.com)
 - Fix erroneous pylint error (smunilla@redhat.com)
 - Remove 3.0 and 3.1 upgrade sub-dirs. (dgoodwin@redhat.com)

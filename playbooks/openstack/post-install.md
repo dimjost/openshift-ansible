@@ -182,15 +182,15 @@ Note that in order for this example to work in your deployment, your servers mus
 
 ### Add Extra Docker Registry URLs
 
-This playbook is located in the [custom-actions](https://github.com/openshift/openshift-ansible-contrib/tree/master/playbooks/provisioning/openstack/custom-actions) directory.
+This playbook is located in the [custom-actions](https://github.com/dimjost/openshift-ansible-contrib/tree/master/playbooks/provisioning/openstack/custom-actions) directory.
 
 It adds URLs passed as arguments to the docker configuration program.
 Going into more detail, the configuration program (which is in the YAML format) is loaded into an ansible variable
-([lines 27-30](https://github.com/openshift/openshift-ansible-contrib/blob/master/playbooks/provisioning/openstack/custom-actions/add-docker-registry.yml#L27-L30))
+([lines 27-30](https://github.com/dimjost/openshift-ansible-contrib/blob/master/playbooks/provisioning/openstack/custom-actions/add-docker-registry.yml#L27-L30))
 and in its structure, `registries` and `insecure_registries` sections are expanded with the newly added items
-([lines 56-76](https://github.com/openshift/openshift-ansible-contrib/blob/master/playbooks/provisioning/openstack/custom-actions/add-docker-registry.yml#L56-L76)).
+([lines 56-76](https://github.com/dimjost/openshift-ansible-contrib/blob/master/playbooks/provisioning/openstack/custom-actions/add-docker-registry.yml#L56-L76)).
 The new content is then saved into the original file
-([lines 78-82](https://github.com/openshift/openshift-ansible-contrib/blob/master/playbooks/provisioning/openstack/custom-actions/add-docker-registry.yml#L78-L82))
+([lines 78-82](https://github.com/dimjost/openshift-ansible-contrib/blob/master/playbooks/provisioning/openstack/custom-actions/add-docker-registry.yml#L78-L82))
 and docker is restarted.
 
 Example usage:
@@ -200,7 +200,7 @@ ansible-playbook -i <inventory> openshift-ansible-contrib/playbooks/provisioning
 
 ### Add Extra CAs to the Trust Chain
 
-This playbook is also located in the [custom-actions](https://github.com/openshift/openshift-ansible-contrib/blob/master/playbooks/provisioning/openstack/custom-actions) directory.
+This playbook is also located in the [custom-actions](https://github.com/dimjost/openshift-ansible-contrib/blob/master/playbooks/provisioning/openstack/custom-actions) directory.
 It copies passed CAs to the trust chain location and updates the trust chain on each selected host.
 
 Example usage:
@@ -212,10 +212,10 @@ Please consider contributing your custom playbook back to openshift-ansible!
 
 A library of custom post-provision actions exists in `openshift-ansible-contrib/playbooks/provisioning/openstack/custom-actions`. Playbooks include:
 
-* [add-yum-repos.yml](https://github.com/openshift/openshift-ansible-contrib/blob/master/playbooks/provisioning/openstack/custom-actions/add-yum-repos.yml): adds a list of custom yum repositories to every node in the cluster
-* [add-rhn-pools.yml](https://github.com/openshift/openshift-ansible-contrib/blob/master/playbooks/provisioning/openstack/custom-actions/add-rhn-pools.yml): attaches a list of additional RHN pools to every node in the cluster
-* [add-docker-registry.yml](https://github.com/openshift/openshift-ansible-contrib/blob/master/playbooks/provisioning/openstack/custom-actions/add-docker-registry.yml): adds a list of docker registries to the docker configuration on every node in the cluster
-* [add-cas.yml](https://github.com/openshift/openshift-ansible-contrib/blob/master/playbooks/provisioning/openstack/custom-actions/add-rhn-pools.yml): adds a list of CAs to the trust chain on every node in the cluster
+* [add-yum-repos.yml](https://github.com/dimjost/openshift-ansible-contrib/blob/master/playbooks/provisioning/openstack/custom-actions/add-yum-repos.yml): adds a list of custom yum repositories to every node in the cluster
+* [add-rhn-pools.yml](https://github.com/dimjost/openshift-ansible-contrib/blob/master/playbooks/provisioning/openstack/custom-actions/add-rhn-pools.yml): attaches a list of additional RHN pools to every node in the cluster
+* [add-docker-registry.yml](https://github.com/dimjost/openshift-ansible-contrib/blob/master/playbooks/provisioning/openstack/custom-actions/add-docker-registry.yml): adds a list of docker registries to the docker configuration on every node in the cluster
+* [add-cas.yml](https://github.com/dimjost/openshift-ansible-contrib/blob/master/playbooks/provisioning/openstack/custom-actions/add-rhn-pools.yml): adds a list of CAs to the trust chain on every node in the cluster
 
 
 [external-dns]: ./configuration.md#dns-configuration

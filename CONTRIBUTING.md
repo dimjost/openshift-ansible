@@ -76,7 +76,7 @@ If you are new to Git, these links might help:
 
 ## Simple all-in-one localhost installation
 ```
-git clone https://github.com/openshift/openshift-ansible
+git clone https://github.com/dimjost/openshift-ansible
 cd openshift-ansible
 sudo ansible-playbook -i inventory/hosts.localhost playbooks/prerequisites.yml
 sudo ansible-playbook -i inventory/hosts.localhost playbooks/deploy_cluster.yml

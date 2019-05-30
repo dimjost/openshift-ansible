@@ -981,7 +981,7 @@ ADDITIONAL_PATH_LOOKUPS = ['/usr/local/bin', os.path.expanduser('~/bin')]
 
 def locate_oc_binary():
     ''' Find and return oc binary file '''
-    # https://github.com/openshift/openshift-ansible/issues/3410
+    # https://github.com/dimjost/openshift-ansible/issues/3410
     # oc can be in /usr/local/bin in some cases, but that may not
     # be in $PATH due to ansible/sudo
     paths = os.environ.get("PATH", os.defpath).split(os.pathsep) + ADDITIONAL_PATH_LOOKUPS

@@ -38,7 +38,7 @@ Given a master node's `master-config.yaml` file, a user configuration file (see 
 
 1. Use `oc` to query the host about additional node information (using the supplied `kubeconfig` file)
 2. Generate an inventory file based on information retrieved from `oc get nodes` and the given `master-config.yaml` file.
-3. run the specified [openshift-ansible](https://github.com/openshift/openshift-ansible) `health.yml` playbook using the generated inventory file from the previous step
+3. run the specified [openshift-ansible](https://github.com/dimjost/openshift-ansible) `health.yml` playbook using the generated inventory file from the previous step
 
 ```
 docker run -u `id -u` \

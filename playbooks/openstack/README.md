@@ -44,7 +44,7 @@ Once the dependencies are installed, clone the [openshift-ansible][openshift-ans
 repository:
 
 ```
-$ git clone https://github.com/openshift/openshift-ansible
+$ git clone https://github.com/dimjost/openshift-ansible
 ```
 
 ### OpenStack Environment
@@ -227,8 +227,8 @@ $ ansible-playbook --user openshift \
 ```
 
 [ansible]: https://www.ansible.com/
-[openshift-ansible]: https://github.com/openshift/openshift-ansible
-[openshift-ansible-setup]: https://github.com/openshift/openshift-ansible#setup
+[openshift-ansible]: https://github.com/dimjost/openshift-ansible
+[openshift-ansible-setup]: https://github.com/dimjost/openshift-ansible#setup
 [devstack]: https://docs.openstack.org/devstack/
 [tripleo]: http://tripleo.org/
 [packstack]: https://www.rdoproject.org/install/packstack/
@@ -236,7 +236,7 @@ $ ansible-playbook --user openshift \
 [hardware-requirements]: https://docs.okd.io/latest/install_config/install/prerequisites.html#hardware
 [origin]: https://www.openshift.org/
 [centos7]: https://www.centos.org/
-[sample-openshift-inventory]: https://github.com/openshift/openshift-ansible/blob/master/inventory/hosts.example
+[sample-openshift-inventory]: https://github.com/dimjost/openshift-ansible/blob/master/inventory/hosts.example
 [configuration]: ./configuration.md
 [loadbalancer]: ./configuration.md#multi-master-configuration
 [external-dns]: ./configuration.md#dns-configuration

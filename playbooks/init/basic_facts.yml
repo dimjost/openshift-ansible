@@ -47,7 +47,7 @@
     # and https://github.com/ansible/ansible/issues/15892
     # NOTE: the "'s can not be removed at this level else the docker command will fail
     # NOTE: When ansible >2.2.1.x is used this can be updated per
-    # https://github.com/openshift/openshift-ansible/pull/3475#discussion_r103525121
+    # https://github.com/dimjost/openshift-ansible/pull/3475#discussion_r103525121
     - name: Determine Atomic Host Docker Version
       shell: 'CURLY="{"; docker version --format "$CURLY{json .Server.Version}}"'
       register: l_atomic_docker_version

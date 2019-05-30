@@ -76,7 +76,7 @@ class DiskAvailability(OpenShiftCheck):
             self.register_log("user-configured thresholds", user_config)
 
         # TODO: as suggested in
-        # https://github.com/openshift/openshift-ansible/pull/4436#discussion_r122180021,
+        # https://github.com/dimjost/openshift-ansible/pull/4436#discussion_r122180021,
         # maybe we could support checking disk availability in paths that are
         # not part of the official recommendation but present in the user
         # configuration.

@@ -4,7 +4,7 @@
 # Runs a playbook with inventory as specified by environment variables.
 #
 # For more information see the documentation:
-#	https://github.com/openshift/openshift-ansible/blob/master/README_CONTAINER_IMAGE.md
+#	https://github.com/dimjost/openshift-ansible/blob/master/README_CONTAINER_IMAGE.md
 
 # SOURCE and HOME DIRECTORY: /opt/app-root/src
 

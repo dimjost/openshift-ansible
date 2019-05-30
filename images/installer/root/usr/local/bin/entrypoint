@@ -3,7 +3,7 @@
 # This file serves as the main entrypoint to the openshift-ansible image.
 #
 # For more information see the documentation:
-#	https://github.com/openshift/openshift-ansible/blob/master/README_CONTAINER_IMAGE.md
+#	https://github.com/dimjost/openshift-ansible/blob/master/README_CONTAINER_IMAGE.md
 
 
 # Patch /etc/passwd file with the current user info.

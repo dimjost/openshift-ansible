@@ -4,7 +4,7 @@ cat <<"EOF"
 The ose-ansible image provides several options to control the behaviour of the containers.
 For more details on these options see the documentation:
 
-  https://github.com/openshift/openshift-ansible/blob/master/README_CONTAINER_IMAGE.md
+  https://github.com/dimjost/openshift-ansible/blob/master/README_CONTAINER_IMAGE.md
 
 At a minimum, when running a container using this image you must provide:
 

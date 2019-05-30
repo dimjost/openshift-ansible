@@ -3,7 +3,7 @@
 This directory contains Ansible playbooks for deployment of [cluster autoscaler](https://github.com/openshift/kubernetes-autoscaler).
 
 It's assumed a user is familiar with the cluster deployment.
-For cluster deployment in AWS cloud provider you can follow instructions provided in [AWS playbooks](https://github.com/openshift/openshift-ansible/tree/master/playbooks/aws).
+For cluster deployment in AWS cloud provider you can follow instructions provided in [AWS playbooks](https://github.com/dimjost/openshift-ansible/tree/master/playbooks/aws).
 
 ## Running
 
@@ -16,7 +16,7 @@ ansible-playbook -i inventory playbooks/openshift-cluster-autoscaler/config.yml
 or during your cluster deployment by setting `openshift_cluster_autoscaler_install=True`
 in the corresponding inventory file.
 
-Currently, the autoscaler is deployed only on nodes that have the `infra` [node role](https://github.com/openshift/openshift-ansible#node-group-definition-and-mapping) assigned (forced by node selector set to `node-role.kubernetes.io/infra: "true"`, see `openshift_cluster_autoscaler_node_selector` variable of the `openshift_cluster_autoscaler` role).
+Currently, the autoscaler is deployed only on nodes that have the `infra` [node role](https://github.com/dimjost/openshift-ansible#node-group-definition-and-mapping) assigned (forced by node selector set to `node-role.kubernetes.io/infra: "true"`, see `openshift_cluster_autoscaler_node_selector` variable of the `openshift_cluster_autoscaler` role).
 In order to run the autoscaler inside the AWS cloud provider,
 one has to attach an [IAM role](https://aws.amazon.com/iam/details/manage-roles/) to the `infra` node that has appropriate permissions to scale down nodes in  [Auto Scaling Group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/AutoScalingGroup.html) belonging to the OpenShift compute node group.
 
